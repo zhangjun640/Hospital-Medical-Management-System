@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+	<div class="wrapper wrapper-content ">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<form class="form-horizontal m-t" id="signupForm">
+						<input id="id" name="id" th:value="${inventoryRecord.id}"  type="hidden">
+							<div class="form-group">	
+								<label class="col-sm-3 control-label">供应商 ID：</label>
+								<div class="col-sm-8">
+									<input id="supplierId" name="supplierId" th:value="${inventoryRecord.supplierId}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">药品 ID：</label>
+								<div class="col-sm-8">
+									<input id="drugId" name="drugId" th:value="${inventoryRecord.drugId}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">药品名称：</label>
+								<div class="col-sm-8">
+									<input id="name" name="name" th:value="${inventoryRecord.name}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">1：入库，2：出库销售，3：出库退回：</label>
+								<div class="col-sm-8">
+									<input id="type" name="type" th:value="${inventoryRecord.type}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">进货/退回/销售数量：</label>
+								<div class="col-sm-8">
+									<input id="quantity" name="quantity" th:value="${inventoryRecord.quantity}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">金额：</label>
+								<div class="col-sm-8">
+									<input id="ammount" name="ammount" th:value="${inventoryRecord.ammount}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">入库、出库、退货原因等：</label>
+								<div class="col-sm-8">
+									<input id="comment" name="comment" th:value="${inventoryRecord.comment}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">顾客 ID：</label>
+								<div class="col-sm-8">
+									<input id="consumerId" name="consumerId" th:value="${inventoryRecord.consumerId}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">经办人：</label>
+								<div class="col-sm-8">
+									<input id="manager" name="manager" th:value="${inventoryRecord.manager}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">：</label>
+								<div class="col-sm-8">
+									<input id="gmtCreated" name="gmtCreated" th:value="${inventoryRecord.gmtCreated}" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">：</label>
+								<div class="col-sm-8">
+									<input id="gmtModified" name="gmtModified" th:value="${inventoryRecord.gmtModified}" class="form-control" type="text">
+								</div>
+							</div>
+																					<div class="form-group">
+								<div class="col-sm-8 col-sm-offset-3">
+									<button type="submit" class="btn btn-primary">提交</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+	<div th:include="include::footer"></div>
+	<script type="text/javascript" src="/js/appjs/app/inventoryRecord/edit.js">
+	</script>
+</body>
+</html>
