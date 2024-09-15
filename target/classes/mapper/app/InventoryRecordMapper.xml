@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.zbl.app.dao.InventoryRecordDao">
+
+	<select id="get" resultType="me.zbl.app.domain.InventoryRecordDO">
+		select `id`,`supplier_id`,`drug_id`,`name`,`type`,`quantity`,`ammount`,`comment`,`consumer_id`,`manager`,`gmt_created`,`gmt_modified` from app_inventory_record where id = #{value}
+	</select>
+
+	<select id="list" resultType="me.zbl.app.domain.InventoryRecordDO">
+		select `id`,`supplier_id`,`drug_id`,`name`,`type`,`quantity`,`ammount`,`comment`,`consumer_id`,`manager`,`gmt_created`,`gmt_modified` from app_inventory_record
+        <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="supplierId != null and supplierId != ''"> and supplier_id = #{supplierId} </if>
+		  		  <if test="drugId != null and drugId != ''"> and drug_id = #{drugId} </if>
+		  		  <if test="name != null and name != ''"> and name = #{name} </if>
+		  		  <if test="type != null and type != ''"> and type = #{type} </if>
+		  		  <if test="quantity != null and quantity != ''"> and quantity = #{quantity} </if>
+		  		  <if test="ammount != null and ammount != ''"> and ammount = #{ammount} </if>
+		  		  <if test="comment != null and comment != ''"> and comment = #{comment} </if>
+		  		  <if test="consumerId != null and consumerId != ''"> and consumer_id = #{consumerId} </if>
+		  		  <if test="manager != null and manager != ''"> and manager = #{manager} </if>
+		  		  <if test="gmtCreated != null and gmtCreated != ''"> and gmt_created = #{gmtCreated} </if>
+		  		  <if test="gmtModified != null and gmtModified != ''"> and gmt_modified = #{gmtModified} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from app_inventory_record
+		 <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="supplierId != null and supplierId != ''"> and supplier_id = #{supplierId} </if>
+		  		  <if test="drugId != null and drugId != ''"> and drug_id = #{drugId} </if>
+		  		  <if test="name != null and name != ''"> and name = #{name} </if>
+		  		  <if test="type != null and type != ''"> and type = #{type} </if>
+		  		  <if test="quantity != null and quantity != ''"> and quantity = #{quantity} </if>
+		  		  <if test="ammount != null and ammount != ''"> and ammount = #{ammount} </if>
+		  		  <if test="comment != null and comment != ''"> and comment = #{comment} </if>
+		  		  <if test="consumerId != null and consumerId != ''"> and consumer_id = #{consumerId} </if>
+		  		  <if test="manager != null and manager != ''"> and manager = #{manager} </if>
+		  		  <if test="gmtCreated != null and gmtCreated != ''"> and gmt_created = #{gmtCreated} </if>
+		  		  <if test="gmtModified != null and gmtModified != ''"> and gmt_modified = #{gmtModified} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="me.zbl.app.domain.InventoryRecordDO">
+		insert into app_inventory_record
+		(
+			`id`, 
+			`supplier_id`, 
+			`drug_id`, 
+			`name`, 
+			`type`, 
+			`quantity`, 
+			`ammount`, 
+			`comment`, 
+			`consumer_id`, 
+			`manager`, 
+			`gmt_created`, 
+			`gmt_modified`
+		)
+		values
+		(
+			#{id}, 
+			#{supplierId}, 
+			#{drugId}, 
+			#{name}, 
+			#{type}, 
+			#{quantity}, 
+			#{ammount}, 
+			#{comment}, 
+			#{consumerId}, 
+			#{manager}, 
+			#{gmtCreated}, 
+			#{gmtModified}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="me.zbl.app.domain.InventoryRecordDO">
+		update app_inventory_record 
+		<set>
+			<if test="supplierId != null">`supplier_id` = #{supplierId}, </if>
+			<if test="drugId != null">`drug_id` = #{drugId}, </if>
+			<if test="name != null">`name` = #{name}, </if>
+			<if test="type != null">`type` = #{type}, </if>
+			<if test="quantity != null">`quantity` = #{quantity}, </if>
+			<if test="ammount != null">`ammount` = #{ammount}, </if>
+			<if test="comment != null">`comment` = #{comment}, </if>
+			<if test="consumerId != null">`consumer_id` = #{consumerId}, </if>
+			<if test="manager != null">`manager` = #{manager}, </if>
+			<if test="gmtCreated != null">`gmt_created` = #{gmtCreated}, </if>
+			<if test="gmtModified != null">`gmt_modified` = #{gmtModified}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="remove">
+		delete from app_inventory_record where id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from app_inventory_record where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>
