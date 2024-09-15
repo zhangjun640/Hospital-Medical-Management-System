@@ -1,0 +1,1091 @@
+2024-08-29 19:57:00 -Starting HospitalApplication on MM-202307041833 with PID 19928 (C:\Users\Administrator\Desktop\bangyunxing\target\classes started by Administrator in C:\Users\Administrator\Desktop\bangyunxing)
+2024-08-29 19:57:00 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2024-08-29 19:57:00 -The following profiles are active: dev
+2024-08-29 19:57:00 -HV000001: Hibernate Validator 5.3.6.Final
+2024-08-29 19:57:00 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b9b8ee8: startup date [Thu Aug 29 19:57:00 CST 2024]; root of context hierarchy
+2024-08-29 19:57:01 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-08-29 19:57:02 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63a2a47b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Bean 'shiroConfig' of type [me.zbl.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$c363386] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Bean 'userRealm' of type [me.zbl.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Cache with name 'me.zbl.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2024-08-29 19:57:02 -Added EhCache named [me.zbl.system.shiro.UserRealm.authorizationCache]
+2024-08-29 19:57:02 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-29 19:57:02 -Tomcat initialized with port(s): 8086 (http)
+2024-08-29 19:57:02 -Starting service [Tomcat]
+2024-08-29 19:57:02 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2024-08-29 19:57:03 -Initializing Spring embedded WebApplicationContext
+2024-08-29 19:57:03 -Root WebApplicationContext: initialization completed in 2241 ms
+2024-08-29 19:57:03 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2024-08-29 19:57:03 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2024-08-29 19:57:03 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2024-08-29 19:57:03 -Mapping filter: 'requestContextFilter' to: [/*]
+2024-08-29 19:57:03 -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2024-08-29 19:57:03 -Filter xssFilter was not registered (disabled)
+2024-08-29 19:57:03 -Mapping filter: 'webStatFilter' to urls: [/*]
+2024-08-29 19:57:03 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2024-08-29 19:57:03 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2024-08-29 19:57:03 -Mapping servlet: 'dispatcherServlet' to [/]
+2024-08-29 19:57:03 -{dataSource-1} inited
+2024-08-29 19:57:04 -ProcessEngine default created
+2024-08-29 19:57:04 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2024-08-29 19:57:04 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2024-08-29 19:57:04 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b9b8ee8: startup date [Thu Aug 29 19:57:00 CST 2024]; root of context hierarchy
+2024-08-29 19:57:04 -Using default implementation for ThreadExecutor
+2024-08-29 19:57:04 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-08-29 19:57:04 -Quartz Scheduler v.2.2.1 created.
+2024-08-29 19:57:04 -RAMJobStore initialized.
+2024-08-29 19:57:04 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-08-29 19:57:04 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2024-08-29 19:57:04 -Quartz scheduler version: 2.2.1
+2024-08-29 19:57:04 -JobFactory set to: me.zbl.common.quartz.factory.JobFactory@11daf4d4
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.ModelController.remove(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/list],methods=[GET]}" onto me.zbl.common.utils.PageWrapper me.zbl.activity.controller.ModelController.list(int,int)
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.ModelController.batchRemove(java.lang.String[])
+2024-08-29 19:57:05 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView me.zbl.activity.controller.ModelController.model()
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void me.zbl.activity.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String me.zbl.activity.controller.ModelController.getStencilset()
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void me.zbl.activity.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/add]}" onto public void me.zbl.activity.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode me.zbl.activity.controller.ModelController.getEditorJson(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void me.zbl.activity.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2024-08-29 19:57:05 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.zbl.activity.controller.ProcessController.add()
+2024-08-29 19:57:05 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.ProcessController.remove(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/activiti/process/list],methods=[GET]}" onto me.zbl.common.utils.PageWrapper me.zbl.activity.controller.ProcessController.list(int,int)
+2024-08-29 19:57:05 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.ProcessController.batchRemove(java.lang.String[])
+2024-08-29 19:57:05 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView me.zbl.activity.controller.ProcessController.process()
+2024-08-29 19:57:05 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2024-08-29 19:57:05 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void me.zbl.activity.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2024-08-29 19:57:05 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2024-08-29 19:57:05 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String me.zbl.activity.controller.SalaryController.add()
+2024-08-29 19:57:05 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.SalaryController.remove(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.SalaryController.remove(java.lang.String[])
+2024-08-29 19:57:05 -Mapped "{[/act/salary/update]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.SalaryController.update(me.zbl.activity.domain.SalaryDO)
+2024-08-29 19:57:05 -Mapped "{[/act/salary/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.activity.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String me.zbl.activity.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String me.zbl.activity.controller.SalaryController.Salary()
+2024-08-29 19:57:05 -Mapped "{[/act/salary/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.activity.controller.SalaryController.saveOrUpdate(me.zbl.activity.domain.SalaryDO)
+2024-08-29 19:57:05 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void me.zbl.activity.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2024-08-29 19:57:05 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto me.zbl.common.utils.PageWrapper me.zbl.activity.controller.TaskController.list(int,int)
+2024-08-29 19:57:05 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void me.zbl.activity.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2024-08-29 19:57:05 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView me.zbl.activity.controller.TaskController.todo()
+2024-08-29 19:57:05 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.zbl.activity.controller.TaskController.gotoTask()
+2024-08-29 19:57:05 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<me.zbl.activity.vo.TaskVO> me.zbl.activity.controller.TaskController.todoList()
+2024-08-29 19:57:05 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void me.zbl.activity.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2024-08-29 19:57:05 -Mapped "{[/consumer/index],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.ConsumerController.index()
+2024-08-29 19:57:05 -Mapped "{[/consumer/add],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.ConsumerController.add()
+2024-08-29 19:57:05 -Mapped "{[/consumer/remove/{id}],methods=[DELETE]}" onto public me.zbl.common.utils.R me.zbl.app.controller.ConsumerController.remove(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/consumer/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.app.controller.ConsumerController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/consumer/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.app.controller.ConsumerController.save(me.zbl.app.domain.Consumer)
+2024-08-29 19:57:05 -Mapped "{[/consumer/search],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> me.zbl.app.controller.ConsumerController.search(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/consumer/edit/{id}],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.ConsumerController.edit(java.lang.String,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/consumer/save],methods=[PUT]}" onto public me.zbl.common.utils.R me.zbl.app.controller.ConsumerController.saveUpdate(me.zbl.app.domain.Consumer)
+2024-08-29 19:57:05 -Mapped "{[/drug/index],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.DrugController.index()
+2024-08-29 19:57:05 -Mapped "{[/drug/add],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.DrugController.add()
+2024-08-29 19:57:05 -Mapped "{[/drug/remove/{id}],methods=[DELETE]}" onto public me.zbl.common.utils.R me.zbl.app.controller.DrugController.remove(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/drug/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.app.controller.DrugController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/drug/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.app.controller.DrugController.save(me.zbl.app.domain.Drug)
+2024-08-29 19:57:05 -Mapped "{[/drug/edit/{id}],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.DrugController.edit(java.lang.String,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/drug/save],methods=[PUT]}" onto public me.zbl.common.utils.R me.zbl.app.controller.DrugController.saveEdit(me.zbl.app.domain.Drug)
+2024-08-29 19:57:05 -Mapped "{[/inventory/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.app.controller.DrugInController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/inventory/drugin/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.app.controller.DrugInController.save(me.zbl.app.domain.DrugInFormDO)
+2024-08-29 19:57:05 -Mapped "{[/inventory/drugin],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.DrugInController.drugInPage()
+2024-08-29 19:57:05 -Mapped "{[/inventory/add],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.DrugInController.drugInAddPage()
+2024-08-29 19:57:05 -Mapped "{[/inventory/listout],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.app.controller.DrugOutController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/inventory/drugout/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.app.controller.DrugOutController.save(me.zbl.app.domain.DrugOutFormDO)
+2024-08-29 19:57:05 -Mapped "{[/inventory/drugout],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.DrugOutController.drugOutPage()
+2024-08-29 19:57:05 -Mapped "{[/inventory/out],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.DrugOutController.drugOutAddPage()
+2024-08-29 19:57:05 -Mapped "{[/sale/index],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SaleController.index()
+2024-08-29 19:57:05 -Mapped "{[/sale/add],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SaleController.add()
+2024-08-29 19:57:05 -Mapped "{[/sale/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.app.controller.SaleController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/sale/back],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SaleController.back()
+2024-08-29 19:57:05 -Mapped "{[/sale/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.app.controller.SaleController.saleSave(me.zbl.app.domain.DrugOutFormDO)
+2024-08-29 19:57:05 -Mapped "{[/sale/sta_sale_year],methods=[GET]}" onto public java.lang.Object me.zbl.app.controller.SaleController.staSaleYear()
+2024-08-29 19:57:05 -Mapped "{[/sale/sta_sale_month],methods=[GET]}" onto public java.lang.Object me.zbl.app.controller.SaleController.staSaleMonth()
+2024-08-29 19:57:05 -Mapped "{[/sale/sta_sale_day],methods=[GET]}" onto public java.lang.Object me.zbl.app.controller.SaleController.staSaleDay()
+2024-08-29 19:57:05 -Mapped "{[/sale/back],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.app.controller.SaleController.saleBackSave(me.zbl.app.domain.BackFormDO)
+2024-08-29 19:57:05 -Mapped "{[/sta/index],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SaleController.statistics()
+2024-08-29 19:57:05 -Mapped "{[/sale_detail/index],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SaleController.saleDetail()
+2024-08-29 19:57:05 -Mapped "{[/supplier/index],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SupplierController.index()
+2024-08-29 19:57:05 -Mapped "{[/supplier/add],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SupplierController.add()
+2024-08-29 19:57:05 -Mapped "{[/supplier/remove/{id}],methods=[DELETE]}" onto public me.zbl.common.utils.R me.zbl.app.controller.SupplierController.remove(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/supplier/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.app.controller.SupplierController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/supplier/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.app.controller.SupplierController.save(me.zbl.app.domain.Supplier)
+2024-08-29 19:57:05 -Mapped "{[/supplier/edit/{id}],methods=[GET]}" onto public java.lang.String me.zbl.app.controller.SupplierController.edit(java.lang.String,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/supplier/save],methods=[PUT]}" onto public me.zbl.common.utils.R me.zbl.app.controller.SupplierController.saveUpdate(me.zbl.app.domain.Supplier)
+2024-08-29 19:57:05 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String me.zbl.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String me.zbl.blog.controller.BlogController.blog()
+2024-08-29 19:57:05 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String me.zbl.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/blog/open/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String me.zbl.blog.controller.ContentController.add()
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.blog.controller.ContentController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.blog.controller.ContentController.remove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent/update]}" onto public me.zbl.common.utils.R me.zbl.blog.controller.ContentController.update(me.zbl.blog.domain.ContentDO)
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.blog.controller.ContentController.save(me.zbl.blog.domain.ContentDO)
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String me.zbl.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String me.zbl.blog.controller.ContentController.bContent()
+2024-08-29 19:57:05 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String me.zbl.common.controller.DictController.add()
+2024-08-29 19:57:05 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.DictController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.DictController.remove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/common/dict/update]}" onto public me.zbl.common.utils.R me.zbl.common.controller.DictController.update(me.zbl.common.domain.DictDO)
+2024-08-29 19:57:05 -Mapped "{[/common/dict/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/common/dict/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.DictController.save(me.zbl.common.domain.DictDO)
+2024-08-29 19:57:05 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<me.zbl.common.domain.DictDO> me.zbl.common.controller.DictController.listType()
+2024-08-29 19:57:05 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String me.zbl.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String me.zbl.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<me.zbl.common.domain.DictDO> me.zbl.common.controller.DictController.listByType(java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String me.zbl.common.controller.DictController.dict()
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String me.zbl.common.controller.FileController.add()
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.FileController.remove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/update]}" onto public me.zbl.common.utils.R me.zbl.common.controller.FileController.update(me.zbl.common.domain.FileDO)
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.FileController.save(me.zbl.common.domain.FileDO)
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/info/{id}]}" onto public me.zbl.common.utils.R me.zbl.common.controller.FileController.info(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String me.zbl.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2024-08-29 19:57:05 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String me.zbl.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/common/generator/update],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> me.zbl.common.controller.GeneratorController.list()
+2024-08-29 19:57:05 -Mapped "{[/common/generator/code/{tableName}]}" onto public void me.zbl.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2024-08-29 19:57:05 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String me.zbl.common.controller.GeneratorController.generator()
+2024-08-29 19:57:05 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String me.zbl.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/common/generator/batchCode]}" onto public void me.zbl.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2024-08-29 19:57:05 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String me.zbl.common.controller.JobController.add()
+2024-08-29 19:57:05 -Mapped "{[/common/job/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.JobController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.JobController.remove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/common/job/update],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.JobController.update(me.zbl.common.domain.TaskDO)
+2024-08-29 19:57:05 -Mapped "{[/common/job/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/common/job/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.JobController.save(me.zbl.common.domain.TaskDO)
+2024-08-29 19:57:05 -Mapped "{[/common/job/info/{id}]}" onto public me.zbl.common.utils.R me.zbl.common.controller.JobController.info(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String me.zbl.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String me.zbl.common.controller.JobController.taskScheduleJob()
+2024-08-29 19:57:05 -Mapped "{[/common/log/remove],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.common.controller.LogController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String me.zbl.common.controller.LogController.log()
+2024-08-29 19:57:05 -Mapped "{[/common/log/list],methods=[GET]}" onto me.zbl.common.domain.PageDO<me.zbl.common.domain.LogDO> me.zbl.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.common.controller.LogController.batchRemove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/error]}" onto public me.zbl.common.utils.R me.zbl.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2024-08-29 19:57:05 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView me.zbl.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String me.zbl.oa.controller.NotifyController.add()
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.oa.controller.NotifyController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.oa.controller.NotifyController.remove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/update]}" onto public me.zbl.common.utils.R me.zbl.oa.controller.NotifyController.update(me.zbl.oa.domain.NotifyDO)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String me.zbl.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public me.zbl.common.utils.PageWrapper me.zbl.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.oa.controller.NotifyController.save(me.zbl.oa.domain.NotifyDO)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/message],methods=[GET]}" onto me.zbl.common.utils.PageWrapper me.zbl.oa.controller.NotifyController.message()
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto me.zbl.common.utils.PageWrapper me.zbl.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String me.zbl.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String me.zbl.oa.controller.NotifyController.oaNotify()
+2024-08-29 19:57:05 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String me.zbl.oa.controller.NotifyController.selefNotify()
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String me.zbl.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.system.controller.DeptController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.system.controller.DeptController.remove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/update]}" onto public me.zbl.common.utils.R me.zbl.system.controller.DeptController.update(me.zbl.system.domain.DeptDO)
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<me.zbl.system.domain.DeptDO> me.zbl.system.controller.DeptController.list()
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public me.zbl.common.utils.R me.zbl.system.controller.DeptController.save(me.zbl.system.domain.DeptDO)
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public me.zbl.common.domain.Tree<me.zbl.system.domain.DeptDO> me.zbl.system.controller.DeptController.tree()
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String me.zbl.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String me.zbl.system.controller.DeptController.treeView()
+2024-08-29 19:57:05 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String me.zbl.system.controller.DeptController.dept()
+2024-08-29 19:57:05 -Mapped "{[/index],methods=[GET]}" onto java.lang.String me.zbl.system.controller.LoginController.index(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/main],methods=[GET]}" onto java.lang.String me.zbl.system.controller.LoginController.main()
+2024-08-29 19:57:05 -Mapped "{[/login],methods=[GET]}" onto java.lang.String me.zbl.system.controller.LoginController.login()
+2024-08-29 19:57:05 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String me.zbl.system.controller.LoginController.logout()
+2024-08-29 19:57:05 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String me.zbl.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/login],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String me.zbl.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.MenuController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/update],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.MenuController.update(me.zbl.system.domain.MenuDO)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/list]}" onto java.util.List<me.zbl.system.domain.MenuDO> me.zbl.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/save],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.MenuController.save(me.zbl.system.domain.MenuDO)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto me.zbl.common.domain.Tree<me.zbl.system.domain.MenuDO> me.zbl.system.controller.MenuController.tree(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto me.zbl.common.domain.Tree<me.zbl.system.domain.MenuDO> me.zbl.system.controller.MenuController.tree()
+2024-08-29 19:57:05 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String me.zbl.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String me.zbl.system.controller.MenuController.menu(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String me.zbl.system.controller.RoleController.add()
+2024-08-29 19:57:05 -Mapped "{[/sys/role/update],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.RoleController.update(me.zbl.system.domain.RoleDO)
+2024-08-29 19:57:05 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<me.zbl.system.domain.RoleDO> me.zbl.system.controller.RoleController.list()
+2024-08-29 19:57:05 -Mapped "{[/sys/role/remove],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.RoleController.save(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/sys/role/save],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.RoleController.save(me.zbl.system.domain.RoleDO)
+2024-08-29 19:57:05 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.RoleController.batchRemove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String me.zbl.system.controller.RoleController.role()
+2024-08-29 19:57:05 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String me.zbl.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/sys/online/list]}" onto public java.util.List<me.zbl.system.domain.UserOnline> me.zbl.system.controller.SessionController.list()
+2024-08-29 19:57:05 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> me.zbl.system.controller.SessionController.sessionList()
+2024-08-29 19:57:05 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String me.zbl.system.controller.SessionController.online()
+2024-08-29 19:57:05 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public me.zbl.common.utils.R me.zbl.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2024-08-29 19:57:05 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String me.zbl.system.controller.UserController.user(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean me.zbl.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String me.zbl.system.controller.UserController.add(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/remove],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.remove(java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/update],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.update(me.zbl.system.domain.UserDO)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/list],methods=[GET]}" onto me.zbl.common.utils.PageWrapper me.zbl.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/save],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.save(me.zbl.system.domain.UserDO)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.batchRemove(java.lang.Long[])
+2024-08-29 19:57:05 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public me.zbl.common.domain.Tree<me.zbl.system.domain.DeptDO> me.zbl.system.controller.UserController.tree()
+2024-08-29 19:57:05 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String me.zbl.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String me.zbl.system.controller.UserController.treeView()
+2024-08-29 19:57:05 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.resetPwd(me.zbl.system.vo.UserVO)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String me.zbl.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.updatePeronal(me.zbl.system.domain.UserDO)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.adminResetPwd(me.zbl.system.vo.UserVO)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto me.zbl.common.utils.R me.zbl.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2024-08-29 19:57:05 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String me.zbl.system.controller.UserController.personal(org.springframework.ui.Model)
+2024-08-29 19:57:05 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2024-08-29 19:57:05 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2024-08-29 19:57:05 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2024-08-29 19:57:05 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2024-08-29 19:57:05 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2024-08-29 19:57:05 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2024-08-29 19:57:05 -Initializing ExecutorService  'brokerChannelExecutor'
+2024-08-29 19:57:05 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b9b8ee8: startup date [Thu Aug 29 19:57:00 CST 2024]; root of context hierarchy
+2024-08-29 19:57:05 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-08-29 19:57:05 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-08-29 19:57:05 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-08-29 19:57:05 -Detected @ExceptionHandler methods in BDExceptionHandler
+2024-08-29 19:57:05 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-08-29 19:57:06 -
+
+Using default security password: 1a596001-0f04-4000-afc0-ad595e7d53a2
+
+2024-08-29 19:57:06 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2024-08-29 19:57:06 -Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@5581c69c, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4facb952, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d10ee02, org.springframework.security.web.header.HeaderWriterFilter@44d92ca9, org.springframework.security.web.csrf.CsrfFilter@42503b5f, org.springframework.security.web.authentication.logout.LogoutFilter@503f073a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fa08570, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50000179, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6702614a, org.springframework.security.web.session.SessionManagementFilter@5f50eef1, org.springframework.security.web.access.ExceptionTranslationFilter@f4b5a9e]
+2024-08-29 19:57:07 -LiveReload server is running on port 35729
+2024-08-29 19:57:07 -Registering beans for JMX exposure on startup
+2024-08-29 19:57:07 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2024-08-29 19:57:07 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2024-08-29 19:57:07 -Starting beans in phase 2147483647
+2024-08-29 19:57:07 -Context refreshed
+2024-08-29 19:57:07 -Found 1 custom documentation plugin(s)
+2024-08-29 19:57:07 -Scanning for api listing references
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_1
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_1
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_2
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_2
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_2
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_2
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_3
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingHEAD_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPUT_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPATCH_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingDELETE_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingOPTIONS_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingTRACE_1
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_3
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_3
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_3
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_4
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_5
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingGET_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingHEAD_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPUT_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPATCH_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingDELETE_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingOPTIONS_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingTRACE_2
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_4
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_4
+2024-08-29 19:57:07 -Generating unique operation named: indexUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_4
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingDELETE_1
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_4
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_5
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_5
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_6
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_6
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_5
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_5
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_7
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_6
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_7
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_7
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingGET_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingHEAD_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPUT_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPATCH_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingDELETE_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingOPTIONS_3
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingTRACE_3
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_6
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_8
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_4
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_6
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_7
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingHEAD_1
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingPOST_1
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingPUT_1
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingPATCH_1
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingDELETE_1
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingOPTIONS_1
+2024-08-29 19:57:07 -Generating unique operation named: infoUsingTRACE_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_9
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_8
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_9
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_8
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_5
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_10
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_10
+2024-08-29 19:57:07 -Generating unique operation named: indexUsingGET_2
+2024-08-29 19:57:07 -Generating unique operation named: welcomeUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_7
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_8
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_11
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_11
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_9
+2024-08-29 19:57:07 -Generating unique operation named: treeUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: treeUsingGET_2
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_6
+2024-08-29 19:57:07 -Generating unique operation named: batchRemoveUsingPOST_1
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_9
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_12
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingDELETE_2
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_8
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_10
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_13
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_12
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_13
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_10
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingGET_4
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingHEAD_4
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_7
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPUT_4
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPATCH_4
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingDELETE_4
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingOPTIONS_4
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingTRACE_4
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_9
+2024-08-29 19:57:07 -Generating unique operation named: batchRemoveUsingPOST_2
+2024-08-29 19:57:07 -Generating unique operation named: deployUsingPOST_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_14
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_14
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_10
+2024-08-29 19:57:07 -Generating unique operation named: batchRemoveUsingPOST_3
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_11
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_15
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_11
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_12
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_8
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_11
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_12
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_16
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_15
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_16
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingGET_5
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingHEAD_5
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_9
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPUT_5
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPATCH_5
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingDELETE_5
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingOPTIONS_5
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingTRACE_5
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_12
+2024-08-29 19:57:07 -Generating unique operation named: indexUsingGET_3
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_17
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_18
+2024-08-29 19:57:07 -Generating unique operation named: listUsingHEAD_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingPOST_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingPUT_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingPATCH_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingDELETE_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingOPTIONS_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingTRACE_1
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_13
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_13
+2024-08-29 19:57:07 -Generating unique operation named: indexUsingGET_4
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_19
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingDELETE_3
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_13
+2024-08-29 19:57:07 -Generating unique operation named: saveUpdateUsingPUT_1
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_20
+2024-08-29 19:57:07 -Generating unique operation named: addUsingGET_14
+2024-08-29 19:57:07 -Generating unique operation named: batchRemoveUsingPOST_4
+2024-08-29 19:57:07 -Generating unique operation named: editUsingGET_14
+2024-08-29 19:57:07 -Generating unique operation named: listUsingGET_21
+2024-08-29 19:57:07 -Generating unique operation named: removeUsingPOST_17
+2024-08-29 19:57:07 -Generating unique operation named: saveUsingPOST_14
+2024-08-29 19:57:07 -Generating unique operation named: treeUsingGET_3
+2024-08-29 19:57:07 -Generating unique operation named: treeViewUsingGET_1
+2024-08-29 19:57:07 -Generating unique operation named: updateUsingPOST_10
+2024-08-29 19:57:07 -Starting Quartz Scheduler now
+2024-08-29 19:57:07 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2024-08-29 19:57:07 -Starting...
+2024-08-29 19:57:07 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2024-08-29 19:57:07 -Started.
+2024-08-29 19:57:07 -Initializing ProtocolHandler ["http-nio-8086"]
+2024-08-29 19:57:07 -Starting ProtocolHandler ["http-nio-8086"]
+2024-08-29 19:57:07 -Using a shared selector for servlet write/read
+2024-08-29 19:57:07 -Tomcat started on port(s): 8086 (http)
+2024-08-29 19:57:08 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2024-08-29 19:57:08 -==> Parameters: 
+2024-08-29 19:57:08 -<==      Total: 1
+2024-08-29 19:57:08 -Started HospitalApplication in 7.89 seconds (JVM running for 9.445)
+2024-08-29 19:57:44 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2024-08-29 19:57:44 -FrameworkServlet 'dispatcherServlet': initialization started
+2024-08-29 19:57:44 -FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2024-08-29 19:57:44 -Enabling session validation scheduler...
+2024-08-29 19:57:44 -请求地址 : http://localhost:8086/
+2024-08-29 19:57:44 -HTTP METHOD : GET
+2024-08-29 19:57:44 -CLASS_METHOD : me.zbl.system.controller.LoginController.welcome
+2024-08-29 19:57:44 -参数 : [{}]
+2024-08-29 19:57:44 -耗时 : 2
+2024-08-29 19:57:44 -返回值 : redirect:/login
+2024-08-29 19:57:44 -请求地址 : http://localhost:8086/login
+2024-08-29 19:57:44 -HTTP METHOD : GET
+2024-08-29 19:57:44 -CLASS_METHOD : me.zbl.system.controller.LoginController.login
+2024-08-29 19:57:44 -参数 : []
+2024-08-29 19:57:44 -耗时 : 0
+2024-08-29 19:57:44 -返回值 : login
+2024-08-29 19:57:44 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2024-08-29 19:57:44 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2024-08-29 19:57:44 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2024-08-29 19:57:44 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2024-08-29 19:57:44 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2024-08-29 19:57:44 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2024-08-29 19:57:44 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2024-08-29 19:57:46 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:57:46 -==> Parameters: admin(String)
+2024-08-29 19:57:46 -<==      Total: 1
+2024-08-29 19:57:46 -请求地址 : http://localhost:8086/login
+2024-08-29 19:57:46 -HTTP METHOD : POST
+2024-08-29 19:57:46 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 19:57:46 -参数 : [admin, 111111]
+2024-08-29 19:57:46 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:57:46 -==> Parameters: admin(String)
+2024-08-29 19:57:46 -<==      Total: 1
+2024-08-29 19:57:46 -耗时 : 5
+2024-08-29 19:57:46 -返回值 : {msg=用户或密码错误, code=500}
+2024-08-29 19:57:46 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2024-08-29 19:57:46 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:57:46 -==> Parameters: -1(Long), 获取用户信息为空(String), 登录(String), 5(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 19:57:46.409(Timestamp)
+2024-08-29 19:57:46 -<==    Updates: 1
+2024-08-29 19:57:49 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:57:49 -==> Parameters: admin(String)
+2024-08-29 19:57:49 -<==      Total: 1
+2024-08-29 19:57:49 -请求地址 : http://localhost:8086/login
+2024-08-29 19:57:49 -HTTP METHOD : POST
+2024-08-29 19:57:49 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 19:57:49 -参数 : [admin, 123456]
+2024-08-29 19:57:49 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:57:49 -==> Parameters: admin(String)
+2024-08-29 19:57:49 -<==      Total: 1
+2024-08-29 19:57:49 -耗时 : 7
+2024-08-29 19:57:49 -返回值 : {msg=操作成功, code=0}
+2024-08-29 19:57:49 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:57:49 -==> Parameters: 1(Long), admin(String), 登录(String), 7(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 19:57:49.807(Timestamp)
+2024-08-29 19:57:49 -请求地址 : http://localhost:8086/index
+2024-08-29 19:57:49 -HTTP METHOD : GET
+2024-08-29 19:57:49 -CLASS_METHOD : me.zbl.system.controller.LoginController.index
+2024-08-29 19:57:49 -参数 : [{}]
+2024-08-29 19:57:49 -<==    Updates: 1
+2024-08-29 19:57:49 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2024-08-29 19:57:49 -==> Parameters: 1(Long)
+2024-08-29 19:57:49 -<==      Total: 28
+2024-08-29 19:57:49 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2024-08-29 19:57:49 -==> Parameters: 138(Long)
+2024-08-29 19:57:49 -<==      Total: 0
+2024-08-29 19:57:49 -耗时 : 33
+2024-08-29 19:57:49 -返回值 : index_v1
+2024-08-29 19:57:49 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:57:49 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 33(Integer), me.zbl.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2024-08-29 19:57:49.895(Timestamp)
+2024-08-29 19:57:49 -<==    Updates: 1
+2024-08-29 19:57:50 -请求地址 : http://localhost:8086/main
+2024-08-29 19:57:50 -HTTP METHOD : GET
+2024-08-29 19:57:50 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 19:57:50 -参数 : []
+2024-08-29 19:57:50 -耗时 : 0
+2024-08-29 19:57:50 -返回值 : main
+2024-08-29 19:57:50 -请求地址 : http://localhost:8086/oa/notify/message
+2024-08-29 19:57:50 -HTTP METHOD : GET
+2024-08-29 19:57:50 -CLASS_METHOD : me.zbl.oa.controller.NotifyController.message
+2024-08-29 19:57:50 -参数 : []
+2024-08-29 19:57:50 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2024-08-29 19:57:50 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2024-08-29 19:57:50 -<==      Total: 0
+2024-08-29 19:57:50 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2024-08-29 19:57:50 -==> Parameters: 1(Long), 0(String)
+2024-08-29 19:57:50 -<==      Total: 1
+2024-08-29 19:57:50 -耗时 : 7
+2024-08-29 19:57:50 -返回值 : me.zbl.common.utils.PageWrapper@60d74f6c
+2024-08-29 19:57:50 -请求地址 : http://localhost:8086/main
+2024-08-29 19:57:50 -HTTP METHOD : GET
+2024-08-29 19:57:50 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 19:57:50 -参数 : []
+2024-08-29 19:57:50 -耗时 : 0
+2024-08-29 19:57:50 -返回值 : main
+2024-08-29 19:57:54 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2024-08-29 19:57:54 -==> Parameters: 1(Long)
+2024-08-29 19:57:54 -<==      Total: 47
+2024-08-29 19:57:54 -请求地址 : http://localhost:8086/common/dict
+2024-08-29 19:57:54 -HTTP METHOD : GET
+2024-08-29 19:57:54 -CLASS_METHOD : me.zbl.common.controller.DictController.dict
+2024-08-29 19:57:54 -参数 : []
+2024-08-29 19:57:54 -耗时 : 0
+2024-08-29 19:57:54 -返回值 : common/dict/dict
+2024-08-29 19:57:55 -请求地址 : http://localhost:8086/common/dict/type
+2024-08-29 19:57:55 -HTTP METHOD : GET
+2024-08-29 19:57:55 -CLASS_METHOD : me.zbl.common.controller.DictController.listType
+2024-08-29 19:57:55 -参数 : []
+2024-08-29 19:57:55 -请求地址 : http://localhost:8086/common/dict/list
+2024-08-29 19:57:55 -HTTP METHOD : GET
+2024-08-29 19:57:55 -CLASS_METHOD : me.zbl.common.controller.DictController.list
+2024-08-29 19:57:55 -参数 : [{limit=10, offset=0}]
+2024-08-29 19:57:55 -==>  Preparing: select distinct `type` , description from sys_dict 
+2024-08-29 19:57:55 -==> Parameters: 
+2024-08-29 19:57:55 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict order by id desc limit ?, ? 
+2024-08-29 19:57:55 -==> Parameters: 0(Integer), 10(Integer)
+2024-08-29 19:57:55 -<==      Total: 31
+2024-08-29 19:57:55 -耗时 : 8
+2024-08-29 19:57:55 -<==      Total: 10
+2024-08-29 19:57:55 -返回值 : [DictDO{id=null, name='null', value='null', type='del_flag', description='删除标记', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='show_hide', description='显示/隐藏', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='yes_no', description='是/否', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='color', description='颜色值', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='theme', description='主题方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_area_type', description='区域类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_type', description='机构类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_common', description='快捷通用部门', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_grade', description='机构等级', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_data_scope', description='数据范围', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_user_type', description='用户类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_theme', description='站点主题', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_module', description='栏目模型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_show_modes', description='展现方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_del_flag', description='内容状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_posid', description='推荐位', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_guestbook', description='留言板分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_leave_type', description='请假类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_log_type', description='日志类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_type', description='流程类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_category', description='流程分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_category', description='代码生成分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_query_type', description='查询方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_show_type', description='字段生成方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_java_type', description='Java类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sex', description='性别', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_type', description='通知通告类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_status', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_read', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='blog_type', description='博客类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='hobby', description='爱好', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}]
+2024-08-29 19:57:55 -==>  Preparing: select count(*) from sys_dict 
+2024-08-29 19:57:55 -==> Parameters: 
+2024-08-29 19:57:55 -<==      Total: 1
+2024-08-29 19:57:55 -耗时 : 11
+2024-08-29 19:57:55 -返回值 : me.zbl.common.utils.PageWrapper@1cdc3c7e
+2024-08-29 19:58:02 -请求地址 : http://localhost:8086/sys/user/
+2024-08-29 19:58:02 -HTTP METHOD : GET
+2024-08-29 19:58:02 -CLASS_METHOD : me.zbl.system.controller.UserController.user
+2024-08-29 19:58:02 -参数 : [{}]
+2024-08-29 19:58:02 -耗时 : 0
+2024-08-29 19:58:02 -返回值 : system/user/user
+2024-08-29 19:58:02 -请求地址 : http://localhost:8086/system/sysDept/tree
+2024-08-29 19:58:02 -HTTP METHOD : GET
+2024-08-29 19:58:02 -CLASS_METHOD : me.zbl.system.controller.DeptController.tree
+2024-08-29 19:58:02 -参数 : []
+2024-08-29 19:58:02 -请求地址 : http://localhost:8086/sys/user/list
+2024-08-29 19:58:02 -HTTP METHOD : GET
+2024-08-29 19:58:02 -CLASS_METHOD : me.zbl.system.controller.UserController.list
+2024-08-29 19:58:02 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2024-08-29 19:58:02 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept order by dept_id desc 
+2024-08-29 19:58:02 -==> Parameters: 
+2024-08-29 19:58:02 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2024-08-29 19:58:02 -==> Parameters: 0(Integer), 10(Integer)
+2024-08-29 19:58:02 -<==      Total: 3
+2024-08-29 19:58:02 -耗时 : 5
+2024-08-29 19:58:02 -返回值 : {"checked":true,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":false,"id":"11","parentId":"0","state":{"opened":true},"text":"仓储"},{"checked":false,"children":[],"hasChildren":false,"hasParent":false,"id":"9","parentId":"0","state":{"opened":true},"text":"销售部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":false,"id":"6","parentId":"0","state":{"opened":true},"text":"总部"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
+2024-08-29 19:58:02 -<==      Total: 3
+2024-08-29 19:58:02 -==>  Preparing: select count(*) from sys_user 
+2024-08-29 19:58:02 -==> Parameters: 
+2024-08-29 19:58:02 -<==      Total: 1
+2024-08-29 19:58:02 -耗时 : 13
+2024-08-29 19:58:02 -返回值 : me.zbl.common.utils.PageWrapper@69d3a571
+2024-08-29 19:58:05 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 9, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannelpool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 9, active threads = 1, queued tasks = 4, completed tasks = 3]
+2024-08-29 19:58:16 -请求地址 : http://localhost:8086/
+2024-08-29 19:58:16 -HTTP METHOD : GET
+2024-08-29 19:58:16 -CLASS_METHOD : me.zbl.system.controller.LoginController.welcome
+2024-08-29 19:58:16 -参数 : [{}]
+2024-08-29 19:58:16 -耗时 : 0
+2024-08-29 19:58:16 -返回值 : redirect:/login
+2024-08-29 19:58:16 -请求地址 : http://localhost:8086/login
+2024-08-29 19:58:16 -HTTP METHOD : GET
+2024-08-29 19:58:16 -CLASS_METHOD : me.zbl.system.controller.LoginController.login
+2024-08-29 19:58:16 -参数 : []
+2024-08-29 19:58:16 -耗时 : 1
+2024-08-29 19:58:16 -返回值 : login
+2024-08-29 19:58:22 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:58:22 -==> Parameters: cangchu(String)
+2024-08-29 19:58:22 -<==      Total: 1
+2024-08-29 19:58:22 -请求地址 : http://localhost:8086/login
+2024-08-29 19:58:22 -HTTP METHOD : POST
+2024-08-29 19:58:22 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 19:58:22 -参数 : [cangchu, 111111]
+2024-08-29 19:58:22 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:58:22 -==> Parameters: cangchu(String)
+2024-08-29 19:58:22 -<==      Total: 1
+2024-08-29 19:58:22 -耗时 : 3
+2024-08-29 19:58:22 -返回值 : {msg=用户或密码错误, code=500}
+2024-08-29 19:58:22 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:58:22 -==> Parameters: -1(Long), 获取用户信息为空(String), 登录(String), 3(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 19:58:22.188(Timestamp)
+2024-08-29 19:58:22 -<==    Updates: 1
+2024-08-29 19:58:26 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:58:26 -==> Parameters: cangchu(String)
+2024-08-29 19:58:26 -<==      Total: 1
+2024-08-29 19:58:26 -请求地址 : http://localhost:8086/login
+2024-08-29 19:58:26 -HTTP METHOD : POST
+2024-08-29 19:58:26 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 19:58:26 -参数 : [cangchu, 123456]
+2024-08-29 19:58:26 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:58:26 -==> Parameters: cangchu(String)
+2024-08-29 19:58:26 -<==      Total: 1
+2024-08-29 19:58:26 -耗时 : 2
+2024-08-29 19:58:26 -返回值 : {msg=操作成功, code=0}
+2024-08-29 19:58:26 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:58:26 -==> Parameters: 140(Long), cangchu(String), 登录(String), 2(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 19:58:26.468(Timestamp)
+2024-08-29 19:58:26 -<==    Updates: 1
+2024-08-29 19:58:26 -请求地址 : http://localhost:8086/index
+2024-08-29 19:58:26 -HTTP METHOD : GET
+2024-08-29 19:58:26 -CLASS_METHOD : me.zbl.system.controller.LoginController.index
+2024-08-29 19:58:26 -参数 : [{}]
+2024-08-29 19:58:26 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2024-08-29 19:58:26 -==> Parameters: 140(Long)
+2024-08-29 19:58:26 -<==      Total: 0
+2024-08-29 19:58:26 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2024-08-29 19:58:26 -==> Parameters: null
+2024-08-29 19:58:26 -<==      Total: 0
+2024-08-29 19:58:26 -耗时 : 8
+2024-08-29 19:58:26 -返回值 : index_v1
+2024-08-29 19:58:26 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:58:26 -==> Parameters: 140(Long), cangchu(String), 请求访问主页(String), 9(Integer), me.zbl.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2024-08-29 19:58:26.513(Timestamp)
+2024-08-29 19:58:26 -<==    Updates: 1
+2024-08-29 19:58:26 -请求地址 : http://localhost:8086/main
+2024-08-29 19:58:26 -HTTP METHOD : GET
+2024-08-29 19:58:26 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 19:58:26 -参数 : []
+2024-08-29 19:58:26 -耗时 : 0
+2024-08-29 19:58:26 -返回值 : main
+2024-08-29 19:58:27 -请求地址 : http://localhost:8086/main
+2024-08-29 19:58:27 -HTTP METHOD : GET
+2024-08-29 19:58:27 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 19:58:27 -参数 : []
+2024-08-29 19:58:27 -耗时 : 0
+2024-08-29 19:58:27 -返回值 : main
+2024-08-29 19:58:27 -请求地址 : http://localhost:8086/oa/notify/message
+2024-08-29 19:58:27 -HTTP METHOD : GET
+2024-08-29 19:58:27 -CLASS_METHOD : me.zbl.oa.controller.NotifyController.message
+2024-08-29 19:58:27 -参数 : []
+2024-08-29 19:58:27 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2024-08-29 19:58:27 -==> Parameters: 0(String), 140(Long), 0(Integer), 3(Integer)
+2024-08-29 19:58:27 -<==      Total: 0
+2024-08-29 19:58:27 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2024-08-29 19:58:27 -==> Parameters: 140(Long), 0(String)
+2024-08-29 19:58:27 -<==      Total: 1
+2024-08-29 19:58:27 -耗时 : 8
+2024-08-29 19:58:27 -返回值 : me.zbl.common.utils.PageWrapper@7f1d9e82
+2024-08-29 19:58:34 -请求地址 : http://localhost:8086/main
+2024-08-29 19:58:34 -HTTP METHOD : GET
+2024-08-29 19:58:34 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 19:58:34 -参数 : []
+2024-08-29 19:58:34 -耗时 : 1
+2024-08-29 19:58:34 -返回值 : main
+2024-08-29 19:58:41 -请求地址 : http://localhost:8086/
+2024-08-29 19:58:41 -HTTP METHOD : GET
+2024-08-29 19:58:41 -CLASS_METHOD : me.zbl.system.controller.LoginController.welcome
+2024-08-29 19:58:41 -参数 : [{}]
+2024-08-29 19:58:41 -耗时 : 1
+2024-08-29 19:58:41 -返回值 : redirect:/login
+2024-08-29 19:58:41 -请求地址 : http://localhost:8086/login
+2024-08-29 19:58:41 -HTTP METHOD : GET
+2024-08-29 19:58:41 -CLASS_METHOD : me.zbl.system.controller.LoginController.login
+2024-08-29 19:58:41 -参数 : []
+2024-08-29 19:58:41 -耗时 : 0
+2024-08-29 19:58:41 -返回值 : login
+2024-08-29 19:58:45 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:58:45 -==> Parameters: admin(String)
+2024-08-29 19:58:45 -<==      Total: 1
+2024-08-29 19:58:45 -请求地址 : http://localhost:8086/login
+2024-08-29 19:58:45 -HTTP METHOD : POST
+2024-08-29 19:58:45 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 19:58:45 -参数 : [admin, 123456]
+2024-08-29 19:58:45 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 19:58:45 -==> Parameters: admin(String)
+2024-08-29 19:58:45 -<==      Total: 1
+2024-08-29 19:58:45 -耗时 : 2
+2024-08-29 19:58:45 -返回值 : {msg=操作成功, code=0}
+2024-08-29 19:58:45 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:58:45 -==> Parameters: 1(Long), admin(String), 登录(String), 2(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 19:58:45.678(Timestamp)
+2024-08-29 19:58:45 -请求地址 : http://localhost:8086/index
+2024-08-29 19:58:45 -HTTP METHOD : GET
+2024-08-29 19:58:45 -CLASS_METHOD : me.zbl.system.controller.LoginController.index
+2024-08-29 19:58:45 -参数 : [{}]
+2024-08-29 19:58:45 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2024-08-29 19:58:45 -==> Parameters: 1(Long)
+2024-08-29 19:58:45 -<==      Total: 28
+2024-08-29 19:58:45 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2024-08-29 19:58:45 -==> Parameters: 138(Long)
+2024-08-29 19:58:45 -<==    Updates: 1
+2024-08-29 19:58:45 -<==      Total: 0
+2024-08-29 19:58:45 -耗时 : 7
+2024-08-29 19:58:45 -返回值 : index_v1
+2024-08-29 19:58:45 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:58:45 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 7(Integer), me.zbl.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2024-08-29 19:58:45.725(Timestamp)
+2024-08-29 19:58:45 -<==    Updates: 1
+2024-08-29 19:58:45 -请求地址 : http://localhost:8086/main
+2024-08-29 19:58:45 -HTTP METHOD : GET
+2024-08-29 19:58:45 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 19:58:45 -参数 : []
+2024-08-29 19:58:45 -耗时 : 1
+2024-08-29 19:58:45 -返回值 : main
+2024-08-29 19:58:46 -请求地址 : http://localhost:8086/main
+2024-08-29 19:58:46 -HTTP METHOD : GET
+2024-08-29 19:58:46 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 19:58:46 -参数 : []
+2024-08-29 19:58:46 -耗时 : 0
+2024-08-29 19:58:46 -返回值 : main
+2024-08-29 19:58:46 -请求地址 : http://localhost:8086/oa/notify/message
+2024-08-29 19:58:46 -HTTP METHOD : GET
+2024-08-29 19:58:46 -CLASS_METHOD : me.zbl.oa.controller.NotifyController.message
+2024-08-29 19:58:46 -参数 : []
+2024-08-29 19:58:46 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2024-08-29 19:58:46 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2024-08-29 19:58:46 -<==      Total: 0
+2024-08-29 19:58:46 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2024-08-29 19:58:46 -==> Parameters: 1(Long), 0(String)
+2024-08-29 19:58:46 -<==      Total: 1
+2024-08-29 19:58:46 -耗时 : 4
+2024-08-29 19:58:46 -返回值 : me.zbl.common.utils.PageWrapper@57e4fdf9
+2024-08-29 19:58:49 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2024-08-29 19:58:49 -==> Parameters: 1(Long)
+2024-08-29 19:58:49 -<==      Total: 47
+2024-08-29 19:58:49 -请求地址 : http://localhost:8086/sys/role
+2024-08-29 19:58:49 -HTTP METHOD : GET
+2024-08-29 19:58:49 -CLASS_METHOD : me.zbl.system.controller.RoleController.role
+2024-08-29 19:58:49 -参数 : []
+2024-08-29 19:58:49 -耗时 : 0
+2024-08-29 19:58:49 -返回值 : system/role/role
+2024-08-29 19:58:49 -请求地址 : http://localhost:8086/sys/role/list
+2024-08-29 19:58:49 -HTTP METHOD : GET
+2024-08-29 19:58:49 -CLASS_METHOD : me.zbl.system.controller.RoleController.list
+2024-08-29 19:58:49 -参数 : []
+2024-08-29 19:58:49 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2024-08-29 19:58:49 -==> Parameters: 
+2024-08-29 19:58:49 -<==      Total: 3
+2024-08-29 19:58:49 -耗时 : 3
+2024-08-29 19:58:49 -返回值 : [RoleDO{roleId=60, roleName='管理员', roleSign='null', remark='普通管理员', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=59, roleName='仓储管理员', roleSign='null', remark='仓储管理员', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=1, roleName='超级用户角色', roleSign='admin', remark='拥有最高权限', userIdCreate=2, gmtCreate=2017-08-12 00:43:52.0, gmtModified=2017-08-12 19:14:59.0, menuIds=null}]
+2024-08-29 19:58:52 -请求地址 : http://localhost:8086/sys/role/edit/59
+2024-08-29 19:58:52 -HTTP METHOD : GET
+2024-08-29 19:58:52 -CLASS_METHOD : me.zbl.system.controller.RoleController.edit
+2024-08-29 19:58:52 -参数 : [59, {}]
+2024-08-29 19:58:52 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role where role_id = ? 
+2024-08-29 19:58:52 -==> Parameters: 59(Long)
+2024-08-29 19:58:52 -<==      Total: 1
+2024-08-29 19:58:52 -耗时 : 3
+2024-08-29 19:58:52 -返回值 : system/role/edit
+2024-08-29 19:58:52 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 19:58:52 -==> Parameters: 1(Long), admin(String), 编辑角色(String), 3(Integer), me.zbl.system.controller.RoleController.edit()(String), null, 127.0.0.1(String), 2024-08-29 19:58:52.007(Timestamp)
+2024-08-29 19:58:52 -<==    Updates: 1
+2024-08-29 19:58:52 -请求地址 : http://localhost:8086/sys/menu/tree/59
+2024-08-29 19:58:52 -HTTP METHOD : GET
+2024-08-29 19:58:52 -CLASS_METHOD : me.zbl.system.controller.MenuController.tree
+2024-08-29 19:58:52 -参数 : [59]
+2024-08-29 19:58:52 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by menu_id desc 
+2024-08-29 19:58:52 -==> Parameters: 
+2024-08-29 19:58:52 -<==      Total: 62
+2024-08-29 19:58:52 -==>  Preparing: select menu_id from sys_role_menu WHERE role_id = ? 
+2024-08-29 19:58:52 -==> Parameters: 59(Long)
+2024-08-29 19:58:52 -<==      Total: 0
+2024-08-29 19:58:52 -耗时 : 11
+2024-08-29 19:58:52 -返回值 : {"checked":true,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","state":{"selected":false},"text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","state":{"selected":false},"text":"图表管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","state":{"selected":false},"text":"待办任务"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"99","parentId":"96","state":{"selected":false},"text":"所有权限"}],"hasChildren":true,"hasParent":true,"id":"96","parentId":"93","state":{"selected":false},"text":"流程管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"95","parentId":"94","state":{"selected":false},"text":"全部权限"}],"hasChildren":true,"hasParent":true,"id":"94","parentId":"93","state":{"selected":false},"text":"模型管理"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","state":{"selected":false},"text":"工作流程"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","state":{"selected":false},"text":"在线用户"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","state":{"selected":false},"text":"运行监控"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"30","parentId":"27","state":{"selected":false},"text":"清空"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"29","parentId":"27","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"28","parentId":"27","state":{"selected":false},"text":"刷新"}],"hasChildren":true,"hasParent":true,"id":"27","parentId":"91","state":{"selected":false},"text":"系统日志"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","state":{"selected":false},"text":"系统监控"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","state":{"selected":false},"text":"我的通知"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"89","parentId":"85","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"88","parentId":"85","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"87","parentId":"85","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"86","parentId":"85","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"85","parentId":"84","state":{"selected":false},"text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","state":{"selected":false},"text":"办公管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"104","parentId":"77","state":{"selected":false},"text":"swagger"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","state":{"selected":false},"text":"计划任务"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","state":{"selected":false},"text":"代码生成"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","state":{"selected":false},"text":"系统工具"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","state":{"selected":false},"text":"发布文章"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"60","parentId":"50","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"59","parentId":"50","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"58","parentId":"50","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"51","parentId":"50","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"50","parentId":"49","state":{"selected":false},"text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","state":{"selected":false},"text":"博客管理"},{"checked":false,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"76","parentId":"73","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"75","parentId":"73","state":{"selected":false},"text":"刪除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"74","parentId":"73","state":{"selected":false},"text":"增加"}],"hasChildren":true,"hasParent":true,"id":"73","parentId":"3","state":{"selected":false},"text":"部门管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"62","parentId":"7","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"56","parentId":"7","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"55","parentId":"7","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"15","parentId":"7","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"7","parentId":"3","state":{"selected":false},"text":"角色管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"26","parentId":"6","state":{"selected":false},"text":"重置密码"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"25","parentId":"6","state":{"selected":false},"text":"停用"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"24","parentId":"6","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"14","parentId":"6","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"13","parentId":"6","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"12","parentId":"6","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"6","parentId":"3","state":{"selected":false},"text":"用户管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"61","parentId":"2","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"22","parentId":"2","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"21","parentId":"2","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"20","parentId":"2","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"2","parentId":"3","state":{"selected":false},"text":"系统菜单"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","state":{"selected":false},"text":"系统管理"},{"checked":false,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"83","parentId":"78","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"81","parentId":"78","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"80","parentId":"78","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"79","parentId":"78","state":{"selected":false},"text":"增加"}],"hasChildren":true,"hasParent":true,"id":"78","parentId":"1","state":{"selected":false},"text":"数据字典"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","state":{"selected":false},"text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","state":{"selected":false},"text":"基础管理"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
+2024-08-29 19:59:24 -请求地址 : http://localhost:8086/common/dict
+2024-08-29 19:59:24 -HTTP METHOD : GET
+2024-08-29 19:59:24 -CLASS_METHOD : me.zbl.common.controller.DictController.dict
+2024-08-29 19:59:24 -参数 : []
+2024-08-29 19:59:24 -耗时 : 0
+2024-08-29 19:59:24 -返回值 : common/dict/dict
+2024-08-29 19:59:25 -请求地址 : http://localhost:8086/common/dict/type
+2024-08-29 19:59:25 -HTTP METHOD : GET
+2024-08-29 19:59:25 -CLASS_METHOD : me.zbl.common.controller.DictController.listType
+2024-08-29 19:59:25 -参数 : []
+2024-08-29 19:59:25 -==>  Preparing: select distinct `type` , description from sys_dict 
+2024-08-29 19:59:25 -==> Parameters: 
+2024-08-29 19:59:25 -<==      Total: 31
+2024-08-29 19:59:25 -耗时 : 2
+2024-08-29 19:59:25 -返回值 : [DictDO{id=null, name='null', value='null', type='del_flag', description='删除标记', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='show_hide', description='显示/隐藏', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='yes_no', description='是/否', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='color', description='颜色值', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='theme', description='主题方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_area_type', description='区域类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_type', description='机构类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_common', description='快捷通用部门', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_grade', description='机构等级', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_data_scope', description='数据范围', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_user_type', description='用户类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_theme', description='站点主题', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_module', description='栏目模型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_show_modes', description='展现方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_del_flag', description='内容状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_posid', description='推荐位', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_guestbook', description='留言板分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_leave_type', description='请假类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_log_type', description='日志类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_type', description='流程类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_category', description='流程分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_category', description='代码生成分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_query_type', description='查询方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_show_type', description='字段生成方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_java_type', description='Java类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sex', description='性别', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_type', description='通知通告类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_status', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_read', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='blog_type', description='博客类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='hobby', description='爱好', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}]
+2024-08-29 19:59:25 -请求地址 : http://localhost:8086/common/dict/list
+2024-08-29 19:59:25 -HTTP METHOD : GET
+2024-08-29 19:59:25 -CLASS_METHOD : me.zbl.common.controller.DictController.list
+2024-08-29 19:59:25 -参数 : [{limit=10, offset=0}]
+2024-08-29 19:59:25 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict order by id desc limit ?, ? 
+2024-08-29 19:59:25 -==> Parameters: 0(Integer), 10(Integer)
+2024-08-29 19:59:25 -<==      Total: 10
+2024-08-29 19:59:25 -==>  Preparing: select count(*) from sys_dict 
+2024-08-29 19:59:25 -==> Parameters: 
+2024-08-29 19:59:25 -<==      Total: 1
+2024-08-29 19:59:25 -耗时 : 7
+2024-08-29 19:59:25 -返回值 : me.zbl.common.utils.PageWrapper@1b557a73
+2024-08-29 19:59:26 -请求地址 : http://localhost:8086/common/sysFile
+2024-08-29 19:59:26 -HTTP METHOD : GET
+2024-08-29 19:59:26 -CLASS_METHOD : me.zbl.common.controller.FileController.sysFile
+2024-08-29 19:59:26 -参数 : [{}]
+2024-08-29 19:59:26 -耗时 : 0
+2024-08-29 19:59:26 -返回值 : common/file/file
+2024-08-29 19:59:26 -请求地址 : http://localhost:8086/common/sysFile/list
+2024-08-29 19:59:26 -HTTP METHOD : GET
+2024-08-29 19:59:26 -CLASS_METHOD : me.zbl.common.controller.FileController.list
+2024-08-29 19:59:26 -参数 : [{limit=12, offset=0, type=}]
+2024-08-29 19:59:26 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
+2024-08-29 19:59:26 -==> Parameters: 0(Integer), 12(Integer)
+2024-08-29 19:59:26 -<==      Total: 0
+2024-08-29 19:59:26 -==>  Preparing: select count(*) from sys_file 
+2024-08-29 19:59:26 -==> Parameters: 
+2024-08-29 19:59:26 -<==      Total: 1
+2024-08-29 19:59:26 -耗时 : 6
+2024-08-29 19:59:26 -返回值 : me.zbl.common.utils.PageWrapper@6374a3af
+2024-08-29 19:59:30 -请求地址 : http://localhost:8086/
+2024-08-29 19:59:30 -HTTP METHOD : GET
+2024-08-29 19:59:30 -CLASS_METHOD : me.zbl.system.controller.LoginController.welcome
+2024-08-29 19:59:30 -参数 : [{}]
+2024-08-29 19:59:30 -耗时 : 1
+2024-08-29 19:59:30 -返回值 : redirect:/login
+2024-08-29 19:59:30 -请求地址 : http://localhost:8086/login
+2024-08-29 19:59:30 -HTTP METHOD : GET
+2024-08-29 19:59:30 -CLASS_METHOD : me.zbl.system.controller.LoginController.login
+2024-08-29 19:59:30 -参数 : []
+2024-08-29 19:59:30 -耗时 : 0
+2024-08-29 19:59:30 -返回值 : login
+2024-08-29 20:25:55 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 20:25:55 -==> Parameters: admin(String)
+2024-08-29 20:25:55 -<==      Total: 1
+2024-08-29 20:25:55 -请求地址 : http://localhost:8086/login
+2024-08-29 20:25:55 -HTTP METHOD : POST
+2024-08-29 20:25:55 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 20:25:55 -参数 : [admin, 111111]
+2024-08-29 20:25:55 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 20:25:55 -==> Parameters: admin(String)
+2024-08-29 20:25:55 -<==      Total: 1
+2024-08-29 20:25:55 -耗时 : 2
+2024-08-29 20:25:55 -返回值 : {msg=用户或密码错误, code=500}
+2024-08-29 20:25:55 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 20:25:55 -==> Parameters: -1(Long), 获取用户信息为空(String), 登录(String), 2(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 20:25:55.071(Timestamp)
+2024-08-29 20:25:55 -<==    Updates: 1
+2024-08-29 20:25:59 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 20:25:59 -==> Parameters: admin(String)
+2024-08-29 20:25:59 -<==      Total: 1
+2024-08-29 20:25:59 -请求地址 : http://localhost:8086/login
+2024-08-29 20:25:59 -HTTP METHOD : POST
+2024-08-29 20:25:59 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 20:25:59 -参数 : [admin, 123456]
+2024-08-29 20:25:59 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 20:25:59 -==> Parameters: admin(String)
+2024-08-29 20:25:59 -<==      Total: 1
+2024-08-29 20:25:59 -耗时 : 2
+2024-08-29 20:25:59 -返回值 : {msg=操作成功, code=0}
+2024-08-29 20:25:59 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 20:25:59 -==> Parameters: 1(Long), admin(String), 登录(String), 2(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 20:25:59.376(Timestamp)
+2024-08-29 20:25:59 -<==    Updates: 1
+2024-08-29 20:25:59 -请求地址 : http://localhost:8086/index
+2024-08-29 20:25:59 -HTTP METHOD : GET
+2024-08-29 20:25:59 -CLASS_METHOD : me.zbl.system.controller.LoginController.index
+2024-08-29 20:25:59 -参数 : [{}]
+2024-08-29 20:25:59 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2024-08-29 20:25:59 -==> Parameters: 1(Long)
+2024-08-29 20:25:59 -<==      Total: 28
+2024-08-29 20:25:59 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2024-08-29 20:25:59 -==> Parameters: 138(Long)
+2024-08-29 20:25:59 -<==      Total: 0
+2024-08-29 20:25:59 -耗时 : 8
+2024-08-29 20:25:59 -返回值 : index_v1
+2024-08-29 20:25:59 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 20:25:59 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 8(Integer), me.zbl.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2024-08-29 20:25:59.421(Timestamp)
+2024-08-29 20:25:59 -<==    Updates: 1
+2024-08-29 20:25:59 -请求地址 : http://localhost:8086/main
+2024-08-29 20:25:59 -HTTP METHOD : GET
+2024-08-29 20:25:59 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 20:25:59 -参数 : []
+2024-08-29 20:25:59 -耗时 : 1
+2024-08-29 20:25:59 -返回值 : main
+2024-08-29 20:26:00 -请求地址 : http://localhost:8086/main
+2024-08-29 20:26:00 -HTTP METHOD : GET
+2024-08-29 20:26:00 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 20:26:00 -参数 : []
+2024-08-29 20:26:00 -耗时 : 1
+2024-08-29 20:26:00 -返回值 : main
+2024-08-29 20:26:00 -请求地址 : http://localhost:8086/oa/notify/message
+2024-08-29 20:26:00 -HTTP METHOD : GET
+2024-08-29 20:26:00 -CLASS_METHOD : me.zbl.oa.controller.NotifyController.message
+2024-08-29 20:26:00 -参数 : []
+2024-08-29 20:26:00 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2024-08-29 20:26:00 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2024-08-29 20:26:00 -<==      Total: 0
+2024-08-29 20:26:00 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2024-08-29 20:26:00 -==> Parameters: 1(Long), 0(String)
+2024-08-29 20:26:00 -<==      Total: 1
+2024-08-29 20:26:00 -耗时 : 4
+2024-08-29 20:26:00 -返回值 : me.zbl.common.utils.PageWrapper@44fec66e
+2024-08-29 20:26:08 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2024-08-29 20:26:08 -==> Parameters: 1(Long)
+2024-08-29 20:26:08 -<==      Total: 47
+2024-08-29 20:26:08 -请求地址 : http://localhost:8086/sys/role
+2024-08-29 20:26:08 -HTTP METHOD : GET
+2024-08-29 20:26:08 -CLASS_METHOD : me.zbl.system.controller.RoleController.role
+2024-08-29 20:26:08 -参数 : []
+2024-08-29 20:26:08 -耗时 : 0
+2024-08-29 20:26:08 -返回值 : system/role/role
+2024-08-29 20:26:09 -请求地址 : http://localhost:8086/sys/role/list
+2024-08-29 20:26:09 -HTTP METHOD : GET
+2024-08-29 20:26:09 -CLASS_METHOD : me.zbl.system.controller.RoleController.list
+2024-08-29 20:26:09 -参数 : []
+2024-08-29 20:26:09 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2024-08-29 20:26:09 -==> Parameters: 
+2024-08-29 20:26:09 -<==      Total: 3
+2024-08-29 20:26:09 -耗时 : 3
+2024-08-29 20:26:09 -返回值 : [RoleDO{roleId=60, roleName='管理员', roleSign='null', remark='普通管理员', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=59, roleName='仓储管理员', roleSign='null', remark='仓储管理员', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=1, roleName='超级用户角色', roleSign='admin', remark='拥有最高权限', userIdCreate=2, gmtCreate=2017-08-12 00:43:52.0, gmtModified=2017-08-12 19:14:59.0, menuIds=null}]
+2024-08-29 20:26:14 -请求地址 : http://localhost:8086/sys/role/edit/59
+2024-08-29 20:26:14 -HTTP METHOD : GET
+2024-08-29 20:26:14 -CLASS_METHOD : me.zbl.system.controller.RoleController.edit
+2024-08-29 20:26:14 -参数 : [59, {}]
+2024-08-29 20:26:14 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role where role_id = ? 
+2024-08-29 20:26:14 -==> Parameters: 59(Long)
+2024-08-29 20:26:14 -<==      Total: 1
+2024-08-29 20:26:14 -耗时 : 3
+2024-08-29 20:26:14 -返回值 : system/role/edit
+2024-08-29 20:26:14 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 20:26:14 -==> Parameters: 1(Long), admin(String), 编辑角色(String), 3(Integer), me.zbl.system.controller.RoleController.edit()(String), null, 127.0.0.1(String), 2024-08-29 20:26:14.795(Timestamp)
+2024-08-29 20:26:14 -<==    Updates: 1
+2024-08-29 20:26:15 -请求地址 : http://localhost:8086/sys/menu/tree/59
+2024-08-29 20:26:15 -HTTP METHOD : GET
+2024-08-29 20:26:15 -CLASS_METHOD : me.zbl.system.controller.MenuController.tree
+2024-08-29 20:26:15 -参数 : [59]
+2024-08-29 20:26:15 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by menu_id desc 
+2024-08-29 20:26:15 -==> Parameters: 
+2024-08-29 20:26:15 -<==      Total: 62
+2024-08-29 20:26:15 -==>  Preparing: select menu_id from sys_role_menu WHERE role_id = ? 
+2024-08-29 20:26:15 -==> Parameters: 59(Long)
+2024-08-29 20:26:15 -<==      Total: 0
+2024-08-29 20:26:15 -耗时 : 10
+2024-08-29 20:26:15 -返回值 : {"checked":true,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","state":{"selected":false},"text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","state":{"selected":false},"text":"图表管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","state":{"selected":false},"text":"待办任务"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"99","parentId":"96","state":{"selected":false},"text":"所有权限"}],"hasChildren":true,"hasParent":true,"id":"96","parentId":"93","state":{"selected":false},"text":"流程管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"95","parentId":"94","state":{"selected":false},"text":"全部权限"}],"hasChildren":true,"hasParent":true,"id":"94","parentId":"93","state":{"selected":false},"text":"模型管理"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","state":{"selected":false},"text":"工作流程"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","state":{"selected":false},"text":"在线用户"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","state":{"selected":false},"text":"运行监控"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"30","parentId":"27","state":{"selected":false},"text":"清空"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"29","parentId":"27","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"28","parentId":"27","state":{"selected":false},"text":"刷新"}],"hasChildren":true,"hasParent":true,"id":"27","parentId":"91","state":{"selected":false},"text":"系统日志"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","state":{"selected":false},"text":"系统监控"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","state":{"selected":false},"text":"我的通知"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"89","parentId":"85","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"88","parentId":"85","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"87","parentId":"85","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"86","parentId":"85","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"85","parentId":"84","state":{"selected":false},"text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","state":{"selected":false},"text":"办公管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"104","parentId":"77","state":{"selected":false},"text":"swagger"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","state":{"selected":false},"text":"计划任务"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","state":{"selected":false},"text":"代码生成"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","state":{"selected":false},"text":"系统工具"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","state":{"selected":false},"text":"发布文章"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"60","parentId":"50","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"59","parentId":"50","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"58","parentId":"50","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"51","parentId":"50","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"50","parentId":"49","state":{"selected":false},"text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","state":{"selected":false},"text":"博客管理"},{"checked":false,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"76","parentId":"73","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"75","parentId":"73","state":{"selected":false},"text":"刪除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"74","parentId":"73","state":{"selected":false},"text":"增加"}],"hasChildren":true,"hasParent":true,"id":"73","parentId":"3","state":{"selected":false},"text":"部门管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"62","parentId":"7","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"56","parentId":"7","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"55","parentId":"7","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"15","parentId":"7","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"7","parentId":"3","state":{"selected":false},"text":"角色管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"26","parentId":"6","state":{"selected":false},"text":"重置密码"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"25","parentId":"6","state":{"selected":false},"text":"停用"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"24","parentId":"6","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"14","parentId":"6","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"13","parentId":"6","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"12","parentId":"6","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"6","parentId":"3","state":{"selected":false},"text":"用户管理"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"61","parentId":"2","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"22","parentId":"2","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"21","parentId":"2","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"20","parentId":"2","state":{"selected":false},"text":"新增"}],"hasChildren":true,"hasParent":true,"id":"2","parentId":"3","state":{"selected":false},"text":"系统菜单"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","state":{"selected":false},"text":"系统管理"},{"checked":false,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"83","parentId":"78","state":{"selected":false},"text":"批量删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"81","parentId":"78","state":{"selected":false},"text":"删除"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"80","parentId":"78","state":{"selected":false},"text":"编辑"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"79","parentId":"78","state":{"selected":false},"text":"增加"}],"hasChildren":true,"hasParent":true,"id":"78","parentId":"1","state":{"selected":false},"text":"数据字典"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","state":{"selected":false},"text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","state":{"selected":false},"text":"基础管理"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
+2024-08-29 20:26:19 -请求地址 : http://localhost:8086/sys/role/update
+2024-08-29 20:26:19 -HTTP METHOD : POST
+2024-08-29 20:26:19 -CLASS_METHOD : me.zbl.system.controller.RoleController.update
+2024-08-29 20:26:19 -参数 : [RoleDO{roleId=59, roleName='仓储管理员', roleSign='null', remark='仓储管理员', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=[77, 104, 72, 48, 93, 99, 95, 101, 96, 94, -1]}]
+2024-08-29 20:26:19 -==>  Preparing: update sys_role SET `role_name` = ?, `remark` = ? where role_id = ? 
+2024-08-29 20:26:19 -==> Parameters: 仓储管理员(String), 仓储管理员(String), 59(Long)
+2024-08-29 20:26:19 -<==    Updates: 1
+2024-08-29 20:26:19 -==>  Preparing: DELETE FROM sys_role_menu WHERE role_id=? 
+2024-08-29 20:26:19 -==> Parameters: 59(Long)
+2024-08-29 20:26:19 -<==    Updates: 0
+2024-08-29 20:26:19 -==>  Preparing: INSERT INTO sys_role_menu(role_id, menu_id) values (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) 
+2024-08-29 20:26:19 -==> Parameters: 59(Long), 77(Long), 59(Long), 104(Long), 59(Long), 72(Long), 59(Long), 48(Long), 59(Long), 93(Long), 59(Long), 99(Long), 59(Long), 95(Long), 59(Long), 101(Long), 59(Long), 96(Long), 59(Long), 94(Long), 59(Long), -1(Long)
+2024-08-29 20:26:19 -<==    Updates: 11
+2024-08-29 20:26:19 -耗时 : 14
+2024-08-29 20:26:19 -返回值 : {msg=操作成功, code=0}
+2024-08-29 20:26:19 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 20:26:19 -==> Parameters: 1(Long), admin(String), 更新角色(String), 14(Integer), me.zbl.system.controller.RoleController.update()(String), null, 127.0.0.1(String), 2024-08-29 20:26:19.279(Timestamp)
+2024-08-29 20:26:19 -<==    Updates: 1
+2024-08-29 20:26:19 -请求地址 : http://localhost:8086/sys/role/list
+2024-08-29 20:26:19 -HTTP METHOD : GET
+2024-08-29 20:26:19 -CLASS_METHOD : me.zbl.system.controller.RoleController.list
+2024-08-29 20:26:19 -参数 : []
+2024-08-29 20:26:19 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2024-08-29 20:26:19 -==> Parameters: 
+2024-08-29 20:26:19 -<==      Total: 3
+2024-08-29 20:26:19 -耗时 : 5
+2024-08-29 20:26:19 -返回值 : [RoleDO{roleId=60, roleName='管理员', roleSign='null', remark='普通管理员', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=59, roleName='仓储管理员', roleSign='null', remark='仓储管理员', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=1, roleName='超级用户角色', roleSign='admin', remark='拥有最高权限', userIdCreate=2, gmtCreate=2017-08-12 00:43:52.0, gmtModified=2017-08-12 19:14:59.0, menuIds=null}]
+2024-08-29 20:26:21 -请求地址 : http://localhost:8086/
+2024-08-29 20:26:21 -HTTP METHOD : GET
+2024-08-29 20:26:21 -CLASS_METHOD : me.zbl.system.controller.LoginController.welcome
+2024-08-29 20:26:21 -参数 : [{}]
+2024-08-29 20:26:21 -耗时 : 1
+2024-08-29 20:26:21 -返回值 : redirect:/login
+2024-08-29 20:26:21 -请求地址 : http://localhost:8086/login
+2024-08-29 20:26:21 -HTTP METHOD : GET
+2024-08-29 20:26:21 -CLASS_METHOD : me.zbl.system.controller.LoginController.login
+2024-08-29 20:26:21 -参数 : []
+2024-08-29 20:26:21 -耗时 : 0
+2024-08-29 20:26:21 -返回值 : login
+2024-08-29 20:26:29 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 20:26:29 -==> Parameters: cangchu(String)
+2024-08-29 20:26:29 -<==      Total: 1
+2024-08-29 20:26:29 -请求地址 : http://localhost:8086/login
+2024-08-29 20:26:29 -HTTP METHOD : POST
+2024-08-29 20:26:29 -CLASS_METHOD : me.zbl.system.controller.LoginController.ajaxLogin
+2024-08-29 20:26:29 -参数 : [cangchu, 123456]
+2024-08-29 20:26:29 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2024-08-29 20:26:29 -==> Parameters: cangchu(String)
+2024-08-29 20:26:29 -<==      Total: 1
+2024-08-29 20:26:29 -耗时 : 4
+2024-08-29 20:26:29 -返回值 : {msg=操作成功, code=0}
+2024-08-29 20:26:29 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 20:26:29 -==> Parameters: 140(Long), cangchu(String), 登录(String), 4(Integer), me.zbl.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2024-08-29 20:26:29.113(Timestamp)
+2024-08-29 20:26:29 -请求地址 : http://localhost:8086/index
+2024-08-29 20:26:29 -HTTP METHOD : GET
+2024-08-29 20:26:29 -<==    Updates: 1
+2024-08-29 20:26:29 -CLASS_METHOD : me.zbl.system.controller.LoginController.index
+2024-08-29 20:26:29 -参数 : [{}]
+2024-08-29 20:26:29 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2024-08-29 20:26:29 -==> Parameters: 140(Long)
+2024-08-29 20:26:29 -<==      Total: 8
+2024-08-29 20:26:29 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2024-08-29 20:26:29 -==> Parameters: null
+2024-08-29 20:26:29 -<==      Total: 0
+2024-08-29 20:26:29 -耗时 : 11
+2024-08-29 20:26:29 -返回值 : index_v1
+2024-08-29 20:26:29 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2024-08-29 20:26:29 -==> Parameters: 140(Long), cangchu(String), 请求访问主页(String), 11(Integer), me.zbl.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2024-08-29 20:26:29.169(Timestamp)
+2024-08-29 20:26:29 -<==    Updates: 1
+2024-08-29 20:26:29 -请求地址 : http://localhost:8086/main
+2024-08-29 20:26:29 -HTTP METHOD : GET
+2024-08-29 20:26:29 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 20:26:29 -参数 : []
+2024-08-29 20:26:29 -耗时 : 0
+2024-08-29 20:26:29 -返回值 : main
+2024-08-29 20:26:29 -请求地址 : http://localhost:8086/main
+2024-08-29 20:26:29 -HTTP METHOD : GET
+2024-08-29 20:26:29 -CLASS_METHOD : me.zbl.system.controller.LoginController.main
+2024-08-29 20:26:29 -参数 : []
+2024-08-29 20:26:29 -耗时 : 1
+2024-08-29 20:26:29 -返回值 : main
+2024-08-29 20:26:29 -请求地址 : http://localhost:8086/oa/notify/message
+2024-08-29 20:26:29 -HTTP METHOD : GET
+2024-08-29 20:26:29 -CLASS_METHOD : me.zbl.oa.controller.NotifyController.message
+2024-08-29 20:26:29 -参数 : []
+2024-08-29 20:26:29 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2024-08-29 20:26:29 -==> Parameters: 0(String), 140(Long), 0(Integer), 3(Integer)
+2024-08-29 20:26:29 -<==      Total: 0
+2024-08-29 20:26:29 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2024-08-29 20:26:29 -==> Parameters: 140(Long), 0(String)
+2024-08-29 20:26:29 -<==      Total: 1
+2024-08-29 20:26:29 -耗时 : 5
+2024-08-29 20:26:29 -返回值 : me.zbl.common.utils.PageWrapper@48a43b60
+2024-08-29 20:27:44 -请求地址 : http://localhost:8086/
+2024-08-29 20:27:44 -HTTP METHOD : GET
+2024-08-29 20:27:44 -CLASS_METHOD : me.zbl.system.controller.LoginController.welcome
+2024-08-29 20:27:44 -参数 : [{}]
+2024-08-29 20:27:44 -耗时 : 1
+2024-08-29 20:27:44 -返回值 : redirect:/login
+2024-08-29 20:27:44 -请求地址 : http://localhost:8086/login
+2024-08-29 20:27:44 -HTTP METHOD : GET
+2024-08-29 20:27:44 -CLASS_METHOD : me.zbl.system.controller.LoginController.login
+2024-08-29 20:27:44 -参数 : []
+2024-08-29 20:27:44 -耗时 : 0
+2024-08-29 20:27:44 -返回值 : login
+2024-08-29 20:28:05 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 5 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(5)-CONNECTED(5)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 60], outboundChannelpool size = 1, active threads = 0, queued tasks = 0, completed tasks = 10], sockJsScheduler[pool size = 20, active threads = 1, queued tasks = 3, completed tasks = 368]
+2024-08-29 20:57:44 -Validating all active sessions...
+2024-08-29 20:57:44 -Finished session validation.  No sessions were stopped.
+2024-08-29 20:58:05 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 5 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(5)-CONNECTED(5)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 60], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 10], sockJsScheduler[pool size = 20, active threads = 1, queued tasks = 3, completed tasks = 729]
+2024-08-29 21:28:05 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 5 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(5)-CONNECTED(5)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 60], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 10], sockJsScheduler[pool size = 20, active threads = 1, queued tasks = 3, completed tasks = 1090]
+2024-08-29 21:57:44 -Validating all active sessions...
+2024-08-29 21:57:44 -Finished session validation.  No sessions were stopped.
+2024-08-29 21:58:05 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 5 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(5)-CONNECTED(5)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 60], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 10], sockJsScheduler[pool size = 20, active threads = 1, queued tasks = 3, completed tasks = 1451]
